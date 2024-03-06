@@ -1,17 +1,17 @@
-﻿Console.WriteLine("Podaj wynik z matematyki:");
-int Matma = int.Parse(Console.ReadLine());
+Console.WriteLine("Podaj wynik z matematyki:");
+int maths = int.Parse(Console.ReadLine());
 Console.WriteLine("podaj wynik z fizyki:");
-int Fizyka = int.Parse(Console.ReadLine());
+int physics = int.Parse(Console.ReadLine());
 Console.WriteLine("podaj wynik z chemi:");
-int Chemia = int.Parse(Console.ReadLine());
+int chemistry = int.Parse(Console.ReadLine());
 
-int Razem = Matma + Fizyka + Chemia;
+int inTotal = maths + physics + chemistry;
 
-if (Matma > 70 && Fizyka > 55 && Chemia > 45 && Razem > 180)
+if (maths > 70 && physics > 55 && chemistry > 45 && inTotal > 180)
 {
     Console.WriteLine("Kandydat dopuszczony do rekrutacji");
 }
-else if (Matma + Fizyka > 150 || Matma + Chemia > 150)
+else if (maths + physics > 150 || maths + chemistry > 150)
 {
     Console.WriteLine("Kandydat dopuszczony do rekrutacji");
 }
